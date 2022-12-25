@@ -1,0 +1,4 @@
+ReviewsDeployment:
+  weight:
+    v1: 50
+    v3: 50

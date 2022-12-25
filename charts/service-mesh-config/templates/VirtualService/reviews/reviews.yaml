@@ -7,6 +7,19 @@ spec:
   - reviews
   http:
   - route:
+    - match:
+      - headers:
+          end-user:
+            exact: jason
+      route:
+      - destination:
+          host: reviews
+          subset: v2
     - destination:
         host: reviews
         subset: v1
+      weight: {{ .Values.ReviewsDeployment.weight.v1 }}
+    - destination:
+        host: reviews
+        subset: v3
+      weight: {{ .Values.ReviewsDeployment.weight.v3 }}
