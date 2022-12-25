@@ -2,5 +2,5 @@ Deployment:
   Reviews:
     v1:
       Weight: 50
-    v2: 
+    v3: 
       Weight: 50
