@@ -18,8 +18,8 @@ spec:
     - destination:
         host: reviews
         subset: v1
-      weight: {{ .Values.ReviewsDeployment.weight.v1 }}
+      weight: {{ .Values.Deployment.Reviews.v1.Weight }}
     - destination:
         host: reviews
         subset: v3
-      weight: {{ .Values.ReviewsDeployment.weight.v3 }}
+      weight: {{ .Values.Deployment.Reviews.v3.Weight }}
