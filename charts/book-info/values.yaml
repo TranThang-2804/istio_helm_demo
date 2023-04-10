@@ -1,0 +1,6 @@
+Deployment:
+  Reviews:
+    v1:
+      Weight: 0
+    v3: 
+      Weight: 100
